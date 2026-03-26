@@ -34,4 +34,4 @@
 - **Google Fonts** — шрифты Playfair Display и Lato
 - **Unsplash API** — качественные стоковые изображения
 
-## 📂 Структура проекта
+
