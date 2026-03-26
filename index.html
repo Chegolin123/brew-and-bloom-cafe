@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bloom — Кофе и уют</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== НАВИГАЦИЯ ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Brew <span>&</span> Bloom</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Основана в 2018 · Авторский кофе</p>
+      <h1 class="hero-title">Каждая чашка<br /><em>рассказывает историю</em></h1>
+      <p class="hero-sub">Напитки ручной работы, свежая выпечка и тёплый уголок,<br />который вы назовёте своим — в самом сердце города.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+        <a href="#contact" class="btn btn-outline">Где мы находимся</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Листайте вниз</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🌿</div>
+        <h3>Органические зёрна</h3>
+        <p>Поставляем с экологичных ферм со всего мира</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🥐</div>
+        <h3>Свежая выпечка</h3>
+        <p>Круассаны и десерты готовятся каждое утро</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎨</div>
+        <h3>Латте-арт</h3>
+        <p>Каждый напиток — маленькое произведение искусства</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📶</div>
+        <h3>Бесплатный Wi-Fi</h3>
+        <p>Оставайтесь на связи, отдыхая и набираясь сил</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== О НАС ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img about-img-1">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Интерьер кофейни" />
+          </div>
+          <div class="about-img about-img-2">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="Заливка кофе" />
+          </div>
+          <div class="about-badge">
+            <span class="badge-number">6+</span>
+            <span class="badge-text">Лет<br/>безупречной работы</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Наша история</p>
+          <h2 class="section-title">Больше, чем просто<br />кофейня</h2>
+          <p>Brew & Bloom родилась из простой мечты — создать пространство, где люди замедляются, общаются и наслаждаются моментом. Мы верим: хороший кофе — это не просто напиток, а целый опыт.</p>
+          <p>Мы тщательно отбираем зёрна на небольших фермах в Эфиопии, Колумбии и Гватемале. Обжарка проходит прямо у нас, чтобы сохранить максимум свежести и вкуса в каждой чашке.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">12K+</span>
+              <span class="stat-label">Довольных гостей</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">30+</span>
+              <span class="stat-label">Позиций меню</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5★</span>
+              <span class="stat-label">Средний рейтинг</span>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-primary">Наше меню</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== МЕНЮ ===== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="section-label center">Что мы подаём</p>
+      <h2 class="section-title center">Наше меню</h2>
+      <p class="section-sub center">От классического эспрессо до сезонных новинок — каждый найдёт напиток по душе.</p>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="coffee">☕ Кофе</button>
+        <button class="tab-btn" data-tab="drinks">🧃 Напитки</button>
+        <button class="tab-btn" data-tab="food">🥐 Еда</button>
+        <button class="tab-btn" data-tab="desserts">🍰 Десерты</button>
+      </div>
+
+      <!-- Кофе -->
+      <div class="menu-grid active" id="tab-coffee">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&q=80" alt="Эспрессо" />
+            <span class="menu-badge">Классика</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Эспрессо</h3>
+              <span class="price">₽350</span>
+            </div>
+            <p>Насыщенный, глубокий вкус одной или двойной порции нашей фирменной смеси.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&q=80" alt="Капучино" />
+            <span class="menu-badge popular">Хит</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Капучино</h3>
+              <span class="price">₽450</span>
+            </div>
+            <p>Эспрессо с бархатистым молоком и пышной молочной пенкой.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80" alt="Флэт Уайт" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Флэт Уайт</h3>
+              <span class="price">₽480</span>
+            </div>
+            <p>Нежная микропена на двойной порции ристретто.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="Колд Брю" />
+            <span class="menu-badge new">Новинка</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Колд Брю</h3>
+              <span class="price">₽550</span>
+            </div>
+            <p>18-часовая холодная экстракция для мягкого, сладкого вкуса.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Мокко" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Мокко</h3>
+              <span class="price">₽500</span>
+            </div>
+            <p>Эспрессо, шоколадный соус, вспененное молоко и сливки.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Айс Латте" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Айс Латте</h3>
+              <span class="price">₽520</span>
+            </div>
+            <p>Охлаждённый эспрессо со льдом и молоком на выбор.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Напитки -->
+      <div class="menu-grid" id="tab-drinks">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80" alt="Матча латте" />
+            <span class="menu-badge popular">Хит</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Матча латте</h3>
+              <span class="price">₽550</span>
+            </div>
+            <p>Церемониальная матча, взбитая с овсяным молоком.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&q=80" alt="Ягодный смузи" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Ягодный смузи</h3>
+              <span class="price">₽600</span>
+            </div>
+            <p>Смесь лесных ягод, банан и миндальное молоко.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80" alt="Чай латте" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Чай латте</h3>
+              <span class="price">₽480</span>
+            </div>
+            <p>Пряный масала чай с распаренным молоком.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&q=80" alt="Лимонад" />
+            <span class="menu-badge new">Новинка</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Игристое лимонад</h3>
+              <span class="price">₽450</span>
+            </div>
+            <p>Свежевыжатый лимон, газированная вода и мята.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Еда -->
+      <div class="menu-grid" id="tab-food">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&q=80" alt="Тост с авокадо" />
+            <span class="menu-badge popular">Хит</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Тост с авокадо</h3>
+              <span class="price">₽950</span>
+            </div>
+            <p>Заквасочный хлеб, авокадо, яйцо пашот, перец хлопьями.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1484723091739-30990ff50f5a?w=400&q=80" alt="Панкейки" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Воздушные панкейки</h3>
+              <span class="price">₽1000</span>
+            </div>
+            <p>Три штуки с кленовым сиропом, ягодами и взбитыми сливками.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80" alt="Сэндвич в круассане" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Сэндвич в круассане</h3>
+              <span class="price">₽850</span>
+            </div>
+            <p>Сливочный круассан с ветчиной, бри и дижонской горчицей.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Гранола боул" />
+            <span class="menu-badge">Полезно</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Боул с гранолой</h3>
+              <span class="price">₽800</span>
+            </div>
+            <p>Домашняя гранола, греческий йогурт, сезонные фрукты, мёд.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Десерты -->
+      <div class="menu-grid" id="tab-desserts">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Тирамису" />
+            <span class="menu-badge popular">Хит</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Тирамису</h3>
+              <span class="price">₽750</span>
+            </div>
+            <p>Классический итальянский десерт с печеньем, пропитанным эспрессо.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80" alt="Шоколадный торт" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Шоколадный торт</h3>
+              <span class="price">₽650</span>
+            </div>
+            <p>Насыщенный торт с тёмным шоколадом и ганашем.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" alt="Круассан" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Масляный круассан</h3>
+              <span class="price">₽350</span>
+            </div>
+            <p>Хрустящий, слоёный, свежая выпечка каждое утро.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" alt="Печенье" />
+            <span class="menu-badge new">Новинка</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Печенье с шоколадом</h3>
+              <span class="price">₽280</span>
+            </div>
+            <p>Тёплое, тягучее, с кусочками тёмного шоколада.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ОТЗЫВЫ ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <p class="section-label center">Мнение гостей</p>
+      <h2 class="section-title center">Нас любят и рекомендуют</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Лучший флэт уайт, который я пробовала. Атмосфера уютная, персонал невероятно приветливый. Моё любимое место по утрам!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">С</div>
+            <div>
+              <strong>Светлана М.</strong>
+              <span>Постоянный гость</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"Brew & Bloom — настоящая жемчужина. Тирамису просто божественный, а колд брю не похож ни на один в городе. Очень рекомендую!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">Д</div>
+            <div>
+              <strong>Дмитрий К.</strong>
+              <span>Фуд-блогер</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Я работаю удалённо, и это моё второе рабочее место. Отличный Wi‑Fi, потрясающий кофе и тост с авокадо — всё, что нужно для продуктивного дня!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">А</div>
+            <div>
+              <strong>Анна Р.</strong>
+              <span>Фрилансер-дизайнер</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ГАЛЕРЕЯ ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="section-label center">Наше пространство</p>
+      <h2 class="section-title center">Взгляд изнутри</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Интерьер кофейни" />
+        <div class="gallery-overlay"><span>Атмосфера</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Латте арт" />
+        <div class="gallery-overlay"><span>Латте-арт</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&q=80" alt="Выпечка" />
+        <div class="gallery-overlay"><span>Свежая выпечка</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&q=80" alt="Бариста за работой" />
+        <div class="gallery-overlay"><span>Наши бариста</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80" alt="Уютный уголок" />
+        <div class="gallery-overlay"><span>Уютные уголки</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80" alt="Кофейные зерна" />
+        <div class="gallery-overlay"><span>Премиальные зёрна</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== КОНТАКТЫ ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label center">Свяжитесь с нами</p>
+      <h2 class="section-title center">Приходите к нам сегодня</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Адрес</h4>
+              <p>ул. Цветочная, 42<br />Москва, 101000</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Часы работы</h4>
+              <p>Пн – Пт: 7:00 – 21:00<br />Сб – Вс: 8:00 – 22:00</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Телефон</h4>
+              <p>+7 (495) 555-01-92</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Электронная почта</h4>
+              <p>hello@brewandbloom.ru</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="#" class="social-btn">Telegram</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <h3>Напишите нам</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Анна Смирнова" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" placeholder="anna@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Тема</label>
+              <input type="text" id="subject" placeholder="Бронирование, вопрос, пожелание..." />
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" rows="5" placeholder="Расскажите нам о чём угодно..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Отправить сообщение ✉️</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Спасибо! Мы свяжемся с вами в ближайшее время.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Brew <span>&</span> Bloom</span>
+          </a>
+          <p>Уютный уголок для любителей кофе, мечтателей и всех, кому нужна хорошая чашка для отличного начала дня.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Меню</h4>
+          <ul>
+            <li><a href="#menu">Кофе</a></li>
+            <li><a href="#menu">Напитки</a></li>
+            <li><a href="#menu">Еда</a></li>
+            <li><a href="#menu">Десерты</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Будьте в курсе</h4>
+          <p>Подпишитесь на новости о сезонных спешлах и событиях.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="ваша@почта.ru" required />
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Brew & Bloom Café. Все права защищены. Сделано с ☕ и ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
